@@ -3,6 +3,7 @@ var selectedFile;
 //Cada Hoja de excel se convertirá en un arreglo, este arreglo se guardará aqui
 var ArregloCargaMasiva = [];
 //Esto acepta el archivo enviado mediante formulario, cuando se envia, se ejcuta el metodo document.getElementById
+var FomularioExcel = document.getElementById('Excel')
 var input_file = document.getElementById('Excel')
 input_file.addEventListener("change", (event) => {
     selectedFile = event.target.files[0];
@@ -21,11 +22,22 @@ document.getElementById('EnviarExcel').addEventListener("click", () => {
           //Manda la hoja como un arreglo, donde la primer fila son las llaves y las demas filas son objetos con el valor de sus
           //celdas
               ArregloCargaMasiva = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
-              console.log((ArregloCargaMasiva));
          });
          //Recorre el arreglo y a cda elemento, lo envia al arreglo general de elementos
          ArregloCargaMasiva.map((i) => {
-            ListadoSoluciones.push(i);
+            AgregarRegistro(
+              i["Nombre del error"],
+              i["Codigo de retorno"],
+              i["ID del mensaje de error"],
+              i["Complejidad"],
+              i["Reportado por"],
+              i["Dia del reporte"],
+              i["Resultado esperado"],
+              i["Resultado obtenido"],
+              i["Descripcion del error"],
+              i["Solucion implementada"],
+              i["Fuentes de consulta"]
+              );
          });
          MostrarSoluciones();
          //Ventana emergente
