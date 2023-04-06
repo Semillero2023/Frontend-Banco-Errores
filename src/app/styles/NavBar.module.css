@@ -1,0 +1,9 @@
+.header{
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+}
+.navbar{
+    display:flex;
+    list-style:none;
+}
