@@ -9,10 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^3.1.9",
+    "bootstrap": "^5.2.3",
+    "cross-fetch": "^3.1.5",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "html2canvas": "^1.4.1",
+    "html2pdf": "^0.0.11",
+    "index": "^0.4.0",
+    "jspdf": "^2.5.1",
     "next": "13.2.4",
+    "node-fetch": "^3.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "18.2.0",
+    "react-tsparticles": "^2.9.3",
+    "tsparticles": "^2.9.3"
   }
 }

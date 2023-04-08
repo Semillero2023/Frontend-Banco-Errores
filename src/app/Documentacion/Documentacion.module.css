@@ -1,0 +1,203 @@
+.Tarjeta{
+    position: relative;
+    background: -webkit-linear-gradient(bottom left, rgba(66, 117, 146, 0.551), rgba(45, 32, 90, 0.517), rgba(80, 48, 104, 0.557));
+    backdrop-filter: blur(20px);
+    padding: 0;
+    width: 50%;
+    height: 150px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 7px;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.5s;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.Tarjeta:hover {
+    background: #ffffff67;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    width: 60%;
+    height: 250px;
+}
+.TextoTarjeta {
+    height: 200px;
+    overflow: hidden;
+}
+.TextoTarjeta:hover {
+    overflow: scroll;
+}
+
+.TarjetaEncabezado {
+    background-color: #ffffff18;
+    color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    border-bottom: 1.5px solid #fff;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    height: 40px;
+}
+
+.TextoEncabezado {
+    position: relative;
+    margin-left: 10px;
+    align-items: center;
+    top: 5px;
+}
+
+.Subtitulo {
+    font-size: 14px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.Texto {
+    font-size: 12px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+
+/* VALORACION DE DIFICULTAD */
+.CajonValoracion { 
+    position: relative;
+    margin-top: 10px;
+    margin-right: 20px;
+    backdrop-filter: blur(20px);
+    width: 90px;
+    height: 90px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    transition: 0.5s;
+    justify-content: center;  
+    float: right;
+}
+
+.DificultadRotulo {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.Dificultad {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.Nivel_1 {
+    border: solid 3px  rgba(58, 242, 138, 0.324);
+}
+
+.Nivel_2 {
+    border: solid 3px  rgba(66, 215, 25, 0.519);
+}
+
+.Nivel_3 {
+    border: solid 3px  rgba(249, 220, 54, 0.77);
+}
+
+.Nivel_4 {
+    border: solid 3px  rgba(235, 123, 43, 0.557);
+}
+
+.Nivel_5 {
+    border:  solid 3px rgba(138, 28, 28, 0.557);
+}
+
+/*
+--------------------------------------------
+        Inicio de tarjeta expandida,
+        en la que se ve el reporte
+--------------------------------------------
+*/
+.TarjetaExpandida {
+    position: relative;
+    background: #dee1ee2f;
+    backdrop-filter: blur(20px);
+    padding: 0;
+    width: 70%;
+    height: 500px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 7px;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.5s;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.TarjetaExpandida:hover {
+    background: #ededed;
+    border: 2px solid #ffffffa2;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    width: 75%;
+    height: 550px;
+    color: #282828;
+}
+.TextoTarjetaExpandida {
+    height: 500px;
+    overflow: hidden;
+}
+.TextoTarjetaExpandida:hover {
+    overflow: scroll;
+}
+
+.TarjetaExpandidaEncabezado {
+    background: -webkit-linear-gradient(bottom left, rgba(72, 117, 193, 0.83), rgba(28, 52, 172, 0.658), rgba(15, 25, 90, 0.795));
+    color: #e3e3e3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    border-bottom: 1.5px solid #fff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.TextoEncabezadoExpandido {
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    justify-self: center;
+    top: 5px;
+}
+
+.spool {
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    color: rgb(73, 101, 194);
+    font-family: Consolas, monospace;
+    font-size: 17px;
+} 

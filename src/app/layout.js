@@ -2,6 +2,7 @@
 import './styles/globals.css'
 //Importa el componente de NavBar
 import { navbar } from "./Components/NavBar"
+import 'bootstrap/dist/css/bootstrap.min.css'
 export default function RootLayout({ children }) {
 //Children significa renderizar todo lo que esta debajo de el
  return (
