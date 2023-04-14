@@ -1,5 +1,7 @@
 import React from "react";
 import biLogo from "./media/bi.png"
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class HeaderHome extends React.Component {
   render() {
@@ -10,7 +12,7 @@ class HeaderHome extends React.Component {
             <div className="col-md-6">
               <h1 className="mb-4 font-weight-bold">
                 Construye con
-                <span className="text-info">ERRORES!</span>
+                <span className="text-info"> ERRORES!</span>
                 <br />
                 se parte de la documentación
               </h1>
@@ -21,10 +23,10 @@ class HeaderHome extends React.Component {
               </p>
               <div>
                 <a
-                  href="#contact"
+                  href="https://semillero2023.github.io/Temp_Creditos/"
                   className="text-center btn btn-outline-dark btn-lg btn-block"
                 >
-                  Contacta con nosotros
+                  <FontAwesomeIcon icon={faUsers}/>   Acerca de nosotros
                 </a>
               </div>
             </div>
