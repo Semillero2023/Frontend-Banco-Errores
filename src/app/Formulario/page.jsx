@@ -9,7 +9,7 @@ export default function Formulario (){
     //Varoables para almacenar los valores del formulario jsx
     const [Nombre_Error, setNombre] = useState(" ");
     const [Tipo_Error, setTipo] = useState(" ");
-    const [Codigo_Retorno, setRC] = useState(" ");
+    const [Codigo_Retorno, setRC] = useState(0);
     const [ID_Mensaje_Error, setID] = useState(" ");
     const [Complejidad, setComplejidad] = useState(1);
     const [Reportado_Por, setUsuario] = useState(" ");
@@ -104,7 +104,7 @@ export default function Formulario (){
 
                 <Form.Group className="mb-3">
                   <Form.Label className={styles.texto}> Indicar el nombre del error </Form.Label>
-                  <Form.Control placeholder='Nombre del error' value={Nombre_Error} onChange={CambiarNombre}></Form.Control>
+                  <Form.Control placeholder='Nombre del error' value={Nombre_Error} onChange={CambiarNombre}/>
                   <Form.Text className="text-muted"> El nombre del error debera ser unico</Form.Text>
                 </Form.Group>
 
@@ -158,12 +158,12 @@ export default function Formulario (){
                       <Col md={4}>
                         { FileStatus==true ?
                           <>
-                          <Form.Control placeholder='00' type='number' value={Codigo_Retorno} onChange={CambiarRC} pattern='^\d{2}$' required></Form.Control>
+                          <Form.Control placeholder='00' type='number' value={Codigo_Retorno} onChange={CambiarRC} pattern='^\d{2}$' required/>
                                 
                           </> 
                           :
                           <>
-                          <Form.Control placeholder='00'  disabled> </Form.Control>
+                          <Form.Control placeholder='00'  disabled/>
                           </>
                         }                       
                       </Col>
@@ -171,12 +171,12 @@ export default function Formulario (){
                       <Col md={4}>
                       { Abend==true ?
                           <>
-                          <Form.Control placeholder='U0001' value={Codigo_Retorno} onChange={CambiarRC} pattern='^S\d{3,4}\sU\d{3,4}$' required></Form.Control>
+                          <Form.Control placeholder='U0001' value={Codigo_Retorno} onChange={CambiarRC} pattern='^S\d{3,4}\sU\d{3,4}$' required/>
                                
                           </> 
                           :
                           <>
-                          <Form.Control placeholder='U0001'   disabled></Form.Control>
+                          <Form.Control placeholder='U0001'   disabled/>
                           </>
                       }         
                       </Col>
@@ -184,12 +184,12 @@ export default function Formulario (){
                       <Col md={4}>
                       { ReturnCode==true ?
                           <>
-                          <Form.Control placeholder='0000' type='number' value={Codigo_Retorno} onChange={CambiarRC} pattern='^\d{2}$' required></Form.Control>
+                          <Form.Control placeholder='0000' type='number' value={Codigo_Retorno} onChange={CambiarRC} pattern='^\d{2}$' required/>
                                 
                           </> 
                           :
                           <>
-                          <Form.Control placeholder='0000'  disabled></Form.Control>
+                          <Form.Control placeholder='0000'  disabled/>
                           </>
                         }
                       </Col>
@@ -200,7 +200,7 @@ export default function Formulario (){
                 <Col>
                     <Form.Group className="mb-3">
                       <Form.Label className={styles.texto}> Indicar el ID del error </Form.Label>
-                      <Form.Control placeholder='Tipo de error' value={ID_Mensaje_Error} onChange={CambiarID}></Form.Control>
+                      <Form.Control placeholder='Tipo de error' value={ID_Mensaje_Error} onChange={CambiarID}/>
                     </Form.Group>
                 </Col>               
                 <Col>
@@ -215,25 +215,25 @@ export default function Formulario (){
                 <Col>
                     <Form.Group className="mb-3">
                       <Form.Label className={styles.texto}> Escribe tu nombre </Form.Label>
-                      <Form.Control placeholder='Tipo de error' value={Reportado_Por} onChange={CambiarUsuario}></Form.Control>
+                      <Form.Control placeholder='Tipo de error' value={Reportado_Por} onChange={CambiarUsuario}/>
                     </Form.Group>
                 </Col>
                 <Col>
                     <Form.Group className="mb-3">
                       <Form.Label className={styles.texto}> Fecha del error </Form.Label>
-                      <Form.Control type='date' placeholder='Tipo de error' value={Fecha} onChange={CambiarFecha}></Form.Control>
+                      <Form.Control type='date' placeholder='Tipo de error' value={Fecha} onChange={CambiarFecha}/>
                     </Form.Group>
                 </Col>
               </Row>          
                                
                 <Form.Group className="mb-3">
                   <Form.Label className={styles.texto}> Indica el resultado esperado </Form.Label>
-                  <Form.Control as="textarea" rows={4} placeholder="Indique el resultado esperado" value={Resultado_Esperado} onChange={CambiarEsperado} ></Form.Control>
+                  <Form.Control as="textarea" rows={4} placeholder="Indique el resultado esperado" value={Resultado_Esperado} onChange={CambiarEsperado} />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                   <Form.Label className={styles.texto}> Indica el resultado obtenido (El resultado que aparecio en el spool) </Form.Label>
-                  <Form.Control as="textarea" rows={4} placeholder="Indique el resultado que obtuvo" value={Resultado_Obtenido} onChange={CambiarObtenido} ></Form.Control>
+                  <Form.Control as="textarea" rows={4} placeholder="Indique el resultado que obtuvo" value={Resultado_Obtenido} onChange={CambiarObtenido} />
                 </Form.Group>
 
                 <Row className={`mb-7, ${styles.spool}`}>
@@ -244,17 +244,17 @@ export default function Formulario (){
 
                 <Form.Group className="mb-3">
                   <Form.Label className={styles.texto}> Describir el error </Form.Label>
-                  <Form.Control as="textarea" rows={3} placeholder="Indique la descripcion del error" value={Descripcion_Error} onChange={CambiarDescripcion} ></Form.Control>
+                  <Form.Control as="textarea" rows={3} placeholder="Indique la descripcion del error" value={Descripcion_Error} onChange={CambiarDescripcion} />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                   <Form.Label className={styles.texto}> Indicar la solucion del error </Form.Label>
-                  <Form.Control as="textarea" rows={3} placeholder="Indique la solucion utilizada" value={Solucion} onChange={CambiarSolucion} ></Form.Control>
+                  <Form.Control as="textarea" rows={3} placeholder="Indique la solucion utilizada" value={Solucion} onChange={CambiarSolucion} />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                   <Form.Label className={styles.texto}> Indicar las fuentes de consulta (Separadas por comas) </Form.Label>
-                  <Form.Control value={Fuentes} onChange={CambiarFuentes} ></Form.Control>
+                  <Form.Control value={Fuentes} onChange={CambiarFuentes} />
                 </Form.Group>
               </Form>
           </Col>

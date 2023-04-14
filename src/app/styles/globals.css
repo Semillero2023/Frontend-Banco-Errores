@@ -79,13 +79,17 @@
   margin: 0;
 }
 
-html,
+html {
+  color:#1a1a1a;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   color: #1a1a1a;
+  background: #1a1a1a; 
+  background-color: #1a1a1a; 
 }
 
 
